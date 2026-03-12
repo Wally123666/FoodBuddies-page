@@ -1,73 +1,157 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FoodBuddies Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
+    :root {
+      --navy: #1b365d;
+      --orange: #e85d04;
+      --muted: #6c757d;
+      --border: #e9ecef;
+      --bg: #f8f9fa;
+    }
     body {
       margin: 0;
       min-height: 100vh;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-      color: #212529;
-      padding: 24px;
-      line-height: 1.6;
+      font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--navy);
+      padding: 24px 16px 48px;
+      line-height: 1.65;
+      font-size: 1rem;
     }
     .container {
-      max-width: 640px;
+      max-width: 680px;
       margin: 0 auto;
-      padding: 32px 28px;
+      padding: 40px 36px;
       background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 4px 24px rgba(0,0,0,.08);
+      border-radius: 20px;
+      box-shadow: 0 4px 24px rgba(27, 54, 93, .06);
     }
-    h1 { font-size: 1.5rem; margin: 0 0 8px; }
-    .updated { font-size: 0.875rem; color: #6c757d; margin-bottom: 24px; }
-    h2 { font-size: 1.1rem; margin: 20px 0 8px; }
-    p, li { margin: 0 0 10px; font-size: 0.95rem; }
-    ul { padding-left: 1.25rem; margin: 0 0 16px; }
-    a { color: #0d6efd; text-decoration: none; }
+    .title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0 0 6px;
+      color: var(--navy);
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 28px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .intro {
+      font-size: 1rem;
+      margin: 0 0 28px;
+      color: var(--navy);
+      opacity: .92;
+    }
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 28px 0 10px;
+      color: var(--navy);
+    }
+    h2:first-of-type { margin-top: 0; }
+    p {
+      margin: 0 0 12px;
+      font-size: 0.95rem;
+      color: var(--navy);
+      opacity: .9;
+    }
+    ul {
+      margin: 0 0 16px;
+      padding-left: 1.35rem;
+    }
+    li {
+      margin: 0 0 8px;
+      font-size: 0.95rem;
+      color: var(--navy);
+      opacity: .9;
+    }
+    .contact-box {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+    }
+    .contact-box h2 { margin-top: 0; margin-bottom: 8px; }
+    .contact-box p { margin-bottom: 8px; }
+    .contact-box a {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 10px 20px;
+      background: var(--orange);
+      color: #fff !important;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: opacity .2s, transform .1s;
+    }
+    .contact-box a:hover {
+      opacity: .92;
+      transform: translateY(-1px);
+    }
+    a { color: var(--orange); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .contact { margin-top: 24px; padding-top: 20px; border-top: 1px solid #dee2e6; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>FoodBuddies Privacy Policy</h1>
-    <p class="updated">Last updated: February 2025</p>
+    <h1 class="title">FoodBuddies Privacy Policy</h1>
+    <p class="meta">Version 1.0 · Last updated: March 12, 2026</p>
 
-    <p>FoodBuddies (&quot;we&quot;, &quot;our&quot;) is a group ordering app. This policy describes how we handle your information.</p>
+    <p class="intro">FoodBuddies respects your privacy and is committed to protecting your personal information.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>When you use the app, we may collect:</p>
+    <h2>Information We Collect</h2>
+    <p>FoodBuddies may collect the following information when users create accounts or place orders:</p>
     <ul>
-      <li><strong>Order information:</strong> name used for pickup, contact (email/phone/WeChat), meal choices, dietary preferences, and other details you enter for your order.</li>
-      <li><strong>Payment proof:</strong> if you upload a payment screenshot, it is stored to verify payment for the group order.</li>
-      <li><strong>Device information:</strong> we may use a device token to send you push notifications about your order (e.g. when the group order is confirmed).</li>
+      <li>name</li>
+      <li>email address</li>
+      <li>phone number</li>
+      <li>order history</li>
+      <li>payment information</li>
+      <li>device or usage data</li>
+    </ul>
+    <p>This information helps FoodBuddies operate the platform and coordinate community food activities.</p>
+
+    <h2>How We Use Information</h2>
+    <p>FoodBuddies may use collected information to:</p>
+    <ul>
+      <li>process food orders</li>
+      <li>coordinate group orders and pickup</li>
+      <li>communicate with users</li>
+      <li>improve the platform and community experience</li>
+      <li>provide customer support</li>
     </ul>
 
-    <h2>2. How We Use It</h2>
-    <p>We use this information to:</p>
-    <ul>
-      <li>Fulfill and manage group orders with the restaurant.</li>
-      <li>Contact you about pickup time and location.</li>
-      <li>Send push notifications related to your order.</li>
-    </ul>
+    <h2>Information Sharing</h2>
+    <p>FoodBuddies may share necessary information with partner restaurants to fulfill orders.</p>
+    <p>FoodBuddies does not sell or rent personal data to third parties.</p>
 
-    <h2>3. Storage &amp; Security</h2>
-    <p>Order data and payment images are stored using Firebase (Google). We do not sell your personal information to third parties.</p>
+    <h2>Payment Processing</h2>
+    <p>Payment information may be processed by third-party payment providers.</p>
+    <p>FoodBuddies does not store full payment card information.</p>
 
-    <h2>4. Your Choices</h2>
-    <p>You can choose what to provide in the app. If you do not want push notifications, you can disable them in your device settings.</p>
+    <h2>Data Security</h2>
+    <p>FoodBuddies uses reasonable security measures to protect personal data.</p>
+    <p>However, no internet platform can guarantee absolute security.</p>
 
-    <h2>5. Changes</h2>
-    <p>We may update this policy from time to time. The &quot;Last updated&quot; date at the top will change when we do.</p>
+    <h2>Changes to this Policy</h2>
+    <p>FoodBuddies may update this Privacy Policy periodically.</p>
+    <p>Continued use of the platform indicates acceptance of updates.</p>
 
-    <div class="contact">
+    <div class="contact-box">
       <h2>Contact Us</h2>
-      <p>If you have questions about this privacy policy, contact us at:</p>
+      <p>If you have questions about this Privacy Policy, contact us at:</p>
       <p><a href="mailto:support@foodbuddies.community">support@foodbuddies.community</a></p>
     </div>
   </div>
